@@ -1,5 +1,7 @@
 module GameTheory
 
-greet() = print("Hello World!")
+export ExtensiveFormGame, is_valid
 
-end # module GameTheory
+include("ExtensiveFormGame.jl")
+
+end
