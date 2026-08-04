@@ -2,7 +2,7 @@
 
 julia_version = "1.12.6"
 manifest_format = "2.0"
-project_hash = "fb590cbd3aeee5f55fbc7475c69d59193872eecf"
+project_hash = "b176f4b2d62e0b380c9b8eb6bcd88edfe390c599"
 
 [[deps.ArnoldiMethod]]
 deps = ["LinearAlgebra", "Random", "StaticArrays"]
@@ -86,7 +86,7 @@ weakdeps = ["StaticArrays"]
     ForwardDiffStaticArraysExt = "StaticArrays"
 
 [[deps.GameTheory]]
-deps = ["Graphs", "HiGHS", "JuMP"]
+deps = ["Graphs", "HiGHS", "JuMP", "Test"]
 path = "."
 uuid = "eb32f581-f156-483e-8f66-6f6d2671548c"
 version = "0.1.0"
