@@ -3,31 +3,8 @@ using JuMP
 using HiGHS
 
 
-struct StrategicFormGame
-    num_players::Int
-    strategies::Dict{Int, Vector{String}}
-    payoffs_to_p1::Matrix{Float64}
-    payoffs_to_p2::Matrix{Float64}
-end
+# StrategicFormGame and MixedStrategyProfile structs are defined in StrategicFormGame.jl
 
-function StrategicFormGame(num_players::Int, strategies::Dict{Int, Vector{String}})
-    if num_players != 2
-        error("The current system only allows for 2-player games.")
-    end
-
-    m = length(strategies[1])
-    n = length(strategies[2])
-
-    payoffs_to_p1 = zeros(Float64, m, n)
-    payoffs_to_p2 = zeros(Float64, m, n)
-
-    return StrategicFormGame(num_players, strategies, payoffs_to_p1, payoffs_to_p2)
-end
-
-struct MixedStrategyProfile
-    σ₁::Dict{String, Float64}
-    σ₂::Dict{String, Float64}
-end
 
 # Helper function to check if a strategy belongs to the simplex Δ(S_i)
 function in_simplex(sigma::Dict{String, Float64})

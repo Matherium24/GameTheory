@@ -1,0 +1,5 @@
+include(joinpath(@__DIR__, "..", "Test", "Week 7 tests", "entry_deterrence.jl"))
+println("\n--- Running Ultimatum Game ---\n")
+include(joinpath(@__DIR__, "..", "Test", "Week 7 tests", "ultimatum_game.jl"))
+println("\n--- Running Centipede Game ---\n")
+include(joinpath(@__DIR__, "..", "Test", "Week 7 tests", "centipede_game.jl"))

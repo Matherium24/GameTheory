@@ -7,6 +7,11 @@ struct StrategicFormGame
     #Defining a function to store the payoff values
 end
 
+struct MixedStrategyProfile
+    σ₁::Dict{String, Float64}
+    σ₂::Dict{String, Float64}
+end
+
 function StrategicFormGame(num_players, strategies)
     if num_players != 2
         error("The current system only allows for 2 player games")
