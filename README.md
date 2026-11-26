@@ -1,6 +1,6 @@
 # GameTheory.jl
 
-*Julia >= 1.10 · MIT License · Developed at LAMSADE, Université Paris Dauphine-PSL*
+*Julia >= 1.10 · MIT License*
 
 `GameTheory.jl` is a Julia package for representing and solving finite strategic-form and
 extensive-form games using directed graph structures (`Graphs.jl`) and linear programming
