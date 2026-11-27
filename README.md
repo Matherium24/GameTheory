@@ -1,4 +1,4 @@
-# GameTheory.jl
+# GameTheory
 
 *Julia >= 1.10 · MIT License*
 
